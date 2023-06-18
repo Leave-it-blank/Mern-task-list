@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import NavBar from "../layouts/NavBar"
 function Task5(){
     const [text, setText] = useState({
             year: "",
@@ -110,6 +111,7 @@ function Task5(){
                 }
               
             </div>
+            <NavBar /> 
         </div>
 
     </div>

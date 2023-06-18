@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import NavBar from "../layouts/NavBar"
 function Task1(){
     const [text, setText] = useState<string>("");
     const [wordCount, setWordCount] = useState<number>(0);
@@ -31,6 +32,8 @@ function Task1(){
 
                 <div className="self-start text-gray-400 capitalize">Word count: {wordCount}</div>
             </div>
+
+            <NavBar></NavBar>
         </div>
 
     </div>

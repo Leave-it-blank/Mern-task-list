@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import NavBar from "../layouts/NavBar"
  
 type user = Array<{
   id: string,
@@ -71,6 +72,7 @@ export default function Task6() {
               ))}
             </tbody>
           </table>
+          <NavBar></NavBar>
       </div>
    </div>
   )
