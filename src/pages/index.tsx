@@ -3,8 +3,22 @@ import { Inter } from 'next/font/google'
 import { useState, useEffect } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
+type user = Array<{
+  id: string,
+  firstName: string,
+  lastName: string,
+  username: string,
+  email: string,
+  phone: string,
+  address: {
+    address: string,
+    city: string,
+    state: string
+  }
+  
+}>
 export default function Home() {
-  const [users, setUsers] = useState([])
+  const [users, setUsers] = useState<user> ([])
   console.log(users.length == 1)
 
   useEffect(() =>{
@@ -21,8 +35,8 @@ export default function Home() {
   console.log(users);
 
   if(users.length == 0){
-    return <div>
-      <h1>Task 6</h1> 
+    return <div className='container text-4xl mx-auto sm:p-10'>
+      <h1>Task 4</h1> 
       <div>
         <h2>Loading...</h2>
       </div>
@@ -30,7 +44,7 @@ export default function Home() {
   }
   return (
    <div className='container mx-auto py-5 my-5'>
-      <h1 className='text-4xl  font-bold p-1 sm:px-10'>Task 6</h1>
+      <h1 className='text-4xl  font-bold p-1 sm:px-10'>Task 4</h1>
         <div className='p-2 sm:p-10'>
           <h2>Users Table</h2>
 
