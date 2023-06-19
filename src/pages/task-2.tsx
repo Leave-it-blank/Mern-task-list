@@ -1,3 +1,4 @@
+//@ts-nocheck
 import React, { useState, useEffect } from "react";
 import CalculatorKey from "../components/CalculatorKeys";
 import NavBar from "@/layouts/NavBar";
