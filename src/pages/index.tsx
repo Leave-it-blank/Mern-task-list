@@ -1,7 +1,5 @@
 import Link from "next/link"
 export default function Home() {
-
-
   return (
     <div className='container mx-auto py-5 my-5'>
       <h1 className='text-4xl  font-bold p-1 sm:px-10'>INDEX ALL TASK ETHANUS MERN</h1>
